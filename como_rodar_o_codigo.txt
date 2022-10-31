@@ -1,0 +1,5 @@
+################## Como acessar o projeto ###################
+
+Para acessar, abra o projeto no VSCODE, após isso localize no terminal a pasta js-antes-do-react e execute 'npm run dev', após isso ele vai diponibilizar um link no localhost ex: localhost:5173.
+
+Todo o conteúdo está disponível nessa página.
