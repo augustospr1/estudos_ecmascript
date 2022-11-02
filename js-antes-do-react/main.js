@@ -96,7 +96,7 @@
 
 // ################ Métodos de array map() filter() forEach() every() some() find() reduce()  ###################
 
-const array = [1, 2, 3, 4, 5];
+// const array = [1, 2, 3, 4, 5];
 
 // for (const i of array) {
 //   document.body.innerText += i;  // O for foi utilizado para percorrer cada elemento do array
@@ -143,3 +143,41 @@ const array = [1, 2, 3, 4, 5];
 // document.body.innerText = JSON.stringify(message)
 
 // ###################### Promises ########################
+
+// async function buscaDadosNoGithub () {
+//   fetch('https://api.github.com/users/augustospr1')
+//   .then(response => {
+//     return response.json();
+//   })                                 // O Promise permite que você resgate coisas de apis e trabalhe com as informações contidas na api. Com ela vc pode utilizar o método .json() para as informações virem em formato de objeto ou .text() para virem no formato de texto.
+//   .then(body => { 
+//     console.log(body)
+//   })
+//   .catch(err => {  // o .catch vai tratar o erro.
+//   console.log(err)
+//   })
+//   .finally (() => {  // o .finally vai ser executado independente se der erro ou não.
+//   console.log('deu')
+//   })
+// }
+
+// buscaDadosNoGithub();
+
+// Outra forma de fazer isso:
+
+// async function buscaDadosNoGithub() {
+//   try {
+//     const response = await fetch('https://api.github.com/users/augustospr1')
+//     const body = await response.json();
+  
+//     return body.name;
+//   }
+//   catch (err) {
+//     console.log(err);                             // Toda função que é async function, se torna automaticamente uma promnise.
+//   } finally {
+//     console.log('Deu')
+//   }
+// }
+
+// buscaDadosNoGithub().then(name => {
+//   console.log(name)
+// });
